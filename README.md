@@ -1,2 +1,2 @@
 # saltstates
-Salt Environment Tests
+ALL Salt Environment Tests
