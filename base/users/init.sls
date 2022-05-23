@@ -1,8 +1,15 @@
 sysadmin:
   user.present:
     - fullname: Sysadmin Administrator
+    - name: sysadmin
     - shell: /bin/bash
     - home: /home/sysadmin
     - groups:
       - wheel
-    - password: $5$1rc8cy6W92.Rcbik$VQYXhUetU0uszaP7zkY4eq8GCwNk8eR72MLTmmemBaD
+    - password: $6$oGMjI99Mfs.fQv13$Dviy1Aw0LKyHFyFiDCGUb9tcb0BNBE0f84.D20aeU.I5RRRmbIJGxYTZ9V8OUEdL.8jMeCnYMPzscTKKOC03X1
+
+key_deployer:
+  ssh_auth.present:
+    - name: aolinux
+    - user: sysadmin
+    - source: salt://users/keys/aolinux.pub
