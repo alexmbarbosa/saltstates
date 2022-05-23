@@ -6,7 +6,7 @@ user_deployer:
     - home: /home/deployer
     - groups:
       - wheel
-    - password: $5$1rc8cy6W92.Rcbik$VQYXhUetU0uszaP7zkY4eq8GCwNk8eR72MLTmmemBaD
+    - password: $6$ZJQ4K5Kp/O2xruar$/nYtMnjMuHf44EvGSHnmHF.qY4kFr4.r7NmGwHmwZjzYme9MLFCsJ95mTwyKIkWiy0OR321yOt7ETKr.q8R9N0
 
 key_deployer:
   ssh_auth.present:
