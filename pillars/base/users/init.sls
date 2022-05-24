@@ -4,6 +4,7 @@ sudo_rhel_users:
     name: sysadmin
     shell: /bin/bash
     home: /home/sysadmin
+    gid: 13000
     groups:
     - wheel
     password: $6$oGMjI99Mfs.fQv13$Dviy1Aw0LKyHFyFiDCGUb9tcb0BNBE0f84.D20aeU.I5RRRmbIJGxYTZ9V8OUEdL.8jMeCnYMPzscTKKOC03X1
