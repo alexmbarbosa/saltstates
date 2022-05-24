@@ -1,4 +1,4 @@
-{% for user, data in piller.get('sysadmin_users', {}).items() %}}
+{% for user, data in pillar.get('sysadmin_users', {}).items() %}}
 user_{{ user }}:
   user.present:
     - name: {{ user }}
@@ -12,6 +12,8 @@ user_{{ user }}:
   ssh_auth.present:
     - name: {{ data['ssh_key'] }}
     - user: {{ user }}
+
+{% endfor %}}
 
 #sysadmin:
 #  user.present:
