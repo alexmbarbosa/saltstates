@@ -2,4 +2,3 @@ base:
   '*':
     - common
     - nettools
-  'minion*':
